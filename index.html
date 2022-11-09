@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>Weather Dashboard</title>
+  </head>
+  <body>
+
+    
+   <div class="container">
+     <!-- Beginning of jumbotron  -->
+    <div class=" jumbotron-fluid bg-dark text-white text-center">
+      <div class="container">
+        <h1 class="display-4 ">Weather Dashboard</h1>
+      </div>
+    </div>
+    <!-- row 1 -->
+    <div class="row">
+      <!-- col 1 in rwo 1 -->
+      <div class="col-3 m-2 bg-light">
+        <h3>Search for a City:</h3> 
+        <div class="input-group mb-2">
+          <input type="text" class="form-control" id="city-input" aria-describedby="basic-addon2">
+          <div class="input-group-append">
+            <button id ="add-city" class="btn btn-outline-secondary bg-primary" type="button"><ion-icon name="search-outline"></ion-icon> </button>
+          </div>
+        </div>
+        <!-- cities box -->
+        <div class="card" style="width: 15rem;">
+          <ul id="city-list" class="list-group list-group-flush">
+          </ul>
+        </div>
+      </div>
+      <!-- col 2 in rwo 1 -->
+      <div class="col-8 m-2">
+        <!-- row 1 in col 2 -->
+        <div class="row-12">
+          <div class="card">
+            <div id="today-weather" class="card-body">
+
+            </div>
+          </div>
+        </div>
+        <!-- row 2 in col 2 -->
+        <br>
+        <div class="row-12">
+          <h3>5-Day Forecast:</h3>
+        </div>
+        <!-- row 3 in col 2 -->
+        <br>
+        <div id ="boxes" class="row">
+
+        
+        </div>
+      </div>
+    </div>
+   
+   </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
